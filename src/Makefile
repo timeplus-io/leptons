@@ -1,5 +1,6 @@
 #VERSION = $(shell git describe --tags --abbrev=0 | sed -e "s/v//g")
 VERSION = 0.0.1
+NAME = timeplus-leptons
 
 .PHONY: build test
 
@@ -16,7 +17,7 @@ build:
 	python3 -m build
 
 install: build
-	pip install ./dist/leptons-$(VERSION).tar.gz
+	pip install ./dist/$(NAME)-$(VERSION).tar.gz
 
 lint:
 	flake8 ./leptons --count --select=E9,F63,F7,F82 --show-source --statistics

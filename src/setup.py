@@ -18,7 +18,7 @@ requirements = [
 ]
 
 setup(
-    name="leptons",
+    name="timeplus-leptons",
     version=__version__,  # noqa: F821
     author="Timeplus",
     author_email="eng@timeplus.io",
