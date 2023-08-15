@@ -1,7 +1,11 @@
 import os
 import openai
-from leptons import agent
+from leptons.agent import Agent
 
+
+api_key = os.environ.get("TIMEPLUS_API_KEY")
+api_address = os.environ.get("TIMEPLUS_ADDRESS")
+agent = Agent(api_address=api_address, api_key=api_key)
 agent.start()
 
 
