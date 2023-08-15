@@ -1,4 +1,5 @@
-VERSION = $(shell git describe --tags --abbrev=0 | sed -e "s/v//g")
+#VERSION = $(shell git describe --tags --abbrev=0 | sed -e "s/v//g")
+VERSION = 0.0.1
 
 .PHONY: build test
 

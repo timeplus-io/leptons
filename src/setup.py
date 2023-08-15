@@ -26,7 +26,7 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     url="https://github.com/timeplus-io/leptons",
-    packages=find_packages(where="leptons", exclude=("tests",)),
+    packages=find_packages(where=".", exclude=("tests",)),
     install_requires=requirements,
     classifiers=[
         "License :: OSI Approved :: Apache Software License",
