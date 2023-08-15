@@ -1,5 +1,4 @@
-#VERSION = $(shell git describe --tags --abbrev=0 | sed -e "s/v//g")
-VERSION = 0.0.1
+VERSION = $(shell git describe --tags --abbrev=0 | sed -e "s/v//g")
 NAME = timeplus-leptons
 
 .PHONY: build test
