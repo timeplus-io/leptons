@@ -6,7 +6,7 @@ to install leptons, run `pip install timeplus-leptons`
 
 to use leptons, refer to following sample code 
 
-```
+```python
 import os
 import openai
 from leptons import agent
